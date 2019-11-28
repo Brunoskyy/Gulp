@@ -34,7 +34,6 @@ gulp.task('app.js', () => {
         .pipe(gulp.dest('build/assets/js'))
 })
 
-
 gulp.task('app.imgs', () => {
     return gulp.src(['src/assets/imgs/**/*.*'])
         .pipe(gulp.dest('build/assets/imgs'))
