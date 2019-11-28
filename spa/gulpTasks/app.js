@@ -27,7 +27,7 @@ gulp.task('app.css', () => {
 })
 
 gulp.task('app.js', () => {
-    return gulp.src(['src/js/navegacao.js'])
+    return gulp.src(['src/assets/js/navegacao.js'])
         .pipe(babel({ presets: ['env'] }))
         .pipe(uglify())
         .pipe(concat('app.min.js'))

@@ -9,5 +9,7 @@ require('./gulpTasks/servidor')
 gulp.task('default', () => {
     if (util.env.production) {
         sequence('deps', 'app')
+    } else {
+        sequence('deps', 'app', 'servidor')
     }
 })
